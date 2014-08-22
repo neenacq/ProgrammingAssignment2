@@ -9,7 +9,7 @@
 ## on the matrix passed in.  Note that y is the variable that can retain
 ## it's value via lexical scoping.
 makeCacheMatrix <- function(x = matrix()) {
-    
+     
     m <- NULL
     
     #set y to x and assign m as null, not the <<- operator here
@@ -38,7 +38,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Brief Description of cacheSolve
 ## cacheSolve checks that the matrix doesn't exist already and then 
-## creates it.
+## creates it, if it doesn't exist.
 
 cacheSolve <- function(x, ...) {
     # Return a matrix that is the inverse of 'x'
